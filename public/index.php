@@ -4,5 +4,6 @@ namespace Curso;
 
 require_once '../vendor/autoload.php';
 
-$ruben = new Soldier('ruben');
-$ruben->move('norte');
+
+$armor = new Armor\BronzeArmor;
+$ruben = new Soldier('ruben', $armor);

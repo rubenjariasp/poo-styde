@@ -2,9 +2,9 @@
 Deprecated: The each() function is deprecated. This message will be suppressed on further calls in C:\Users\Ruben\AppData\Roaming\Sublime Text 3\Packages\PHPTools\php.tools\codeFormatter.php on line 54
 <?php
 
-namespace Curso;
+namespace Curso\Armor;
 
-require_once '../vendor/autoload.php';
-
-$armor = new Armor\BronzeArmor;
-$ruben = new Soldier('ruben', $armor);
+interface Armor {
+	public function absorbDamage($damage);
+	public function description(Unit $unit);
+}

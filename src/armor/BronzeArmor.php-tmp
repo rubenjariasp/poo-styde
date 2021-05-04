@@ -1,0 +1,16 @@
+
+Deprecated: The each() function is deprecated. This message will be suppressed on further calls in C:\Users\Ruben\AppData\Roaming\Sublime Text 3\Packages\PHPTools\php.tools\codeFormatter.php on line 54
+<?php
+
+namespace Curso\Armor;
+
+class BronzeArmor implements Armor {
+
+	public function absorbDamage($damage) {
+		return $damage/2;
+	}
+
+	public function description(Unit $unit) {
+		show("{$unit->getName()} adquirió una armadura de bronce");
+	}
+}
