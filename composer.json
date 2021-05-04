@@ -1,0 +1,19 @@
+{
+    "name": "poo/practica",
+    "description": "aprendiendo poo con styde",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ruben Arias",
+            "email": "ruprosperi@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": ["src/helpers.php"],
+        "psr-4": {
+            "Curso\\": "src/"
+        }
+    }
+}

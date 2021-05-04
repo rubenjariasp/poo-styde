@@ -1,0 +1,19 @@
+
+Deprecated: The each() function is deprecated. This message will be suppressed on further calls in C:\Users\Ruben\AppData\Roaming\Sublime Text 3\Packages\PHPTools\php.tools\codeFormatter.php on line 54
+<?php
+
+namespace Curso;
+
+abstract class Unit {
+	protected $name;
+	protected $life = 40;
+
+	public function __construct($name) {
+		$this->name = ucwords(strtolower($name));
+	}
+
+	public function move($direction) {
+		show("{$this->name} se desplaza hacía el {$direction}");
+	}
+
+}
