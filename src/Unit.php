@@ -2,6 +2,8 @@
 
 namespace Curso;
 
+use Curso\Armor\Armor;
+
 abstract class Unit
 {
 	protected $name;
